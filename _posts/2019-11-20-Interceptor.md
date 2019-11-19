@@ -39,7 +39,7 @@ comments: true
 * interceptor 패키지 생성
 * LoggerInterceptor 클래스 생성 후 내용 입력
 
-```Java
+{% highlight java %}
 @Slf4j
 public class LoggerInterceptor extends HandlerInterceptorAdapter{
 
@@ -58,7 +58,7 @@ public class LoggerInterceptor extends HandlerInterceptorAdapter{
 		super.postHandle(request, response, handler, modelAndView);
 	}
 }
-```
+{% endhighlight %}
 
 ## Interceptor 등록하기
 * Configuration 패키지 생성
