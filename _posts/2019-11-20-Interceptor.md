@@ -66,7 +66,7 @@ public class LoggerInterceptor extends HandlerInterceptorAdapter{
 * addPathPatterns() 메서드 - 요청 주소의 패턴 지정
 * excludePathPatterns() 메서드 - 제외할 요청 주소의 패턴을 지정
 
-```Java
+{% highlight java %}
 public class WebMvcConfiguration implements WebMvcConfigurer {
 
 	@Override
@@ -77,4 +77,4 @@ public class WebMvcConfiguration implements WebMvcConfigurer {
 				;
 	}
 }
-```
+{% endhighlight %}
