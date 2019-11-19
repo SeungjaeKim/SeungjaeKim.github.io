@@ -100,6 +100,16 @@
 		        {% assign domain = site.url %}
 		    {% endif %}
 		    <li><a href="{{ domain }}{{ link.url }}" {% if link.url contains 'http' %}target="_blank" rel="noopener noreferrer"{% endif %}>{{ link.title }}</a></li>
-		  {% endfor %}
+          {% endfor %}
+          
+          {% assign pages_list = site.pages %}
+            {% for node in pages_list %}
+            {% if node.title != null %}
+                {% if node.layout == "category" %}
+                <li><a class="category-link {% if page.url == node.url %} active{% endif %}"
+                href="{{ site.url }}{{ node.url }}">{{ node.title }}</a></li>
+                {% endif %}
+            {% endif %}
+            {% endfor %}
 		</ul><!-- /.dl-menu -->
 	</nav><!-- /.dl-menuwrapper -->
