@@ -15,7 +15,7 @@ comments: true
 ---
 
 <figure>
-	<img src="assets/img/img_01.png">
+	<img src="/assets/img/img_01.png">
 	<figcaption>스프링 MVC 요청의 라이프 사이클</figcaption>
 </figure>
 
